@@ -1,0 +1,83 @@
+.banner{
+    width: 100%;
+    /* min-height: 100vh; */
+    max-height: max-content;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.banner-color{
+    width: 100%;
+    /* min-height: 100vh; */
+    max-height: max-content;
+    background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.833), rgba(0, 0, 0, 0.948) );
+    /* backdrop-filter: blur(.05em); */
+}
+.banner-content{
+    min-height: 100vh;
+    /* padding-top: 12em !important;
+    padding-bottom: 4em !important; */
+    /* margin-top: 7em; */
+}
+
+.movie-banner-heading{
+    border-left: solid 3px var(--app-color);
+    padding-left: .5em;
+    color: white;
+    font-size: 1.2em;
+    font-family: spaceBold;
+}
+.movie-banner-title{
+    color: white;
+    font-size: 3.5em;
+    text-overflow: clip;
+    margin: .6em 0em;
+}
+.rating{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+.rating .pg{
+    border: solid 2px white;
+    padding: .3em .8em;
+    border-radius: .3em;
+    font-size: .9em;
+}.rating span{
+    padding: 0em;
+    font-size: 1.2em;
+}
+.movie-about{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1.5em 0em;
+}
+.banner-details{
+    /* background-color: green;
+    padding: 0 !important;
+    height: max-content; */
+    /* margin: 1em; */
+    gap: 1em;
+    display: flex;
+
+}
+.banner-data{
+    margin: .5em 0em!important;
+}
+@media screen and (max-width: 580px) {   
+    .banner-content{
+        min-height: 100vh !important;
+    }
+    /* .banner{
+        min-height: 30em !important;
+    } */
+    .movie-banner-title{
+        font-size: 2em;
+    }
+    .movie-banner-content{
+        padding-top: 7em !important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    
+}

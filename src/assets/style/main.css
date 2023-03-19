@@ -1,0 +1,95 @@
+@import url(fonts.css);
+body{
+    /* background-color: rgb(22, 21, 21) !important; */
+    /* overflow: hidden; */
+}
+:root{
+    --app-hover-color: transparent;
+    --app-color: rgb(116,187,4);
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: space;
+}
+p, h1,h2,h3,h4,h5,h6{
+    padding: 0em;
+    font-family: spaceBold;
+}
+.hv-100{
+    height: 100vh;
+}
+.bg-app-primary{
+    background-color:  #141414 !important;
+    /* backdrop-filter: blur(0.625em); */
+}
+.text-app-dark{
+    color:  rgb(102, 102, 102) !important;
+}
+.app-border-dark{
+    border-color: rgba(45, 45, 45, 0.778) !important;
+}
+.app-border-bottom{
+    border-bottom: solid 1px rgba(45, 45, 45, 0.153);
+}
+
+.app-border-top{
+    border-top: solid 1px rgba(45, 45, 45, 0.153);
+}
+.text-app-primary{
+    color: var(--app-color) !important;
+    padding: 0;
+}
+
+.btn-app-primary{
+    background-color: var(--app-color) !important;
+    color: white !important;
+    transition: all .5s;
+}
+.btn-app-primary:hover{
+    background-color: var(--app-hover-color) !important;
+    color: white;
+    border: solid 2px var(--app-color);
+}
+.play-btn{
+    width: 10em !important;
+    height: 3.4em;
+    border-radius: .5em !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: .6em;
+    background-color: rgba(45, 45, 45, 0.741);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(45, 45, 45); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(45, 45, 45); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(45, 45, 45); 
+  }
+
+.app-container{
+    padding: 1em 4em !important;
+}
+
+
+@media screen and (max-width: 580px ) {
+    .app-container{
+        padding: 1.5em !important;
+    }
+    
+}
