@@ -76,7 +76,7 @@ body{
     position: relative;
     margin-top: 2em;
     gap: .5em;
-    max-width: 20em;
+    /* max-width: 40em; */
     height: 4em;
 }
 .banner-cast-image{
@@ -87,15 +87,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: .5em;
     /* transform: scale(1.2); */
 }
 .banner-cast-image span{
     text-overflow: ellipsis !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 9vh !important;
 }
 .banner-cast-image img{
-    width: 4vh !important;
-    height: 4vh;
+    width: 10vh !important;
+    height: 6vh;
     border-radius: .4em;
     transition: all .3s;
     /* transform: scale(1.2); */

@@ -13,8 +13,89 @@ const MovieBanner = () => {
         autoplay: true,
         smartSpeed: 50,
         rewind: true,
-        items: 5,
-        // stagePadding: 30,
+        items: 6,
+        stagePadding: 40,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            300: {
+                margin: -10,
+                items: 1,
+            },
+            320: {
+                margin: 20,
+                stagePadding: 20,
+                items: 4,
+            },
+            340: {
+                // margin: 40,
+                stagePadding: 30,
+                items: 5,
+            },
+            380: {
+                stagePadding: 35,
+                margin: 0,
+                items: 3,
+            },
+            400: {
+                // stagePadding: 0,
+                margin: -40,
+                items: 2,
+            },
+            600: {
+                items: 3,
+            },
+            700: {
+                // margin: 20,
+                stagePadding: 10,
+                items: 4,
+            },
+            800: {
+                // margin: -20,
+                items: 4,
+            },
+            900: {
+                // margin: 130,
+                items: 6,
+            },
+            1000: {
+                margin: -20,
+                items: 4,
+            },
+            // 1100: {
+            //     margin: -160,
+            //     items: 2,
+            // },
+            // 1200: {
+            //     margin: 30,
+            //     items: 3,
+            // },
+            // 1300: {
+            //     margin: 160,
+            //     items: 3,
+            // },
+            // 1400: {
+            //     // margin: 50,
+            //     items: 3,
+            // },
+            // 1500: {
+            //     margin: 90,
+            //     items: 4,
+            // },
+            // 1600: {
+            //     // margin: 330,
+            //     items: 4,
+            // },
+            // 1700: {
+            //     margin: 80,
+            //     items: 5,
+            // },
+            // 1800: {
+            //     margin: 150,
+            //     items: 9,
+            // }
+        },
     }
     return (
         <>
@@ -64,6 +145,20 @@ const MovieBanner = () => {
                                 <div className="banner-cast">
                                     
                                     <ReactOwlCarousel {...options}>
+                                        <div className="banner-cast-image">
+                                            <img src={img} className='e' alt="" />
+                                            <span>O. James ksksmm s ij skj</span>
+                                        </div>
+                                        <div className="banner-cast-image">
+                                            <img src={img} className='e' alt="" />
+                                            
+                                        </div>
+                                        <div className="banner-cast-image">
+                                            <img src={img} className='e' alt="" />
+                                        </div>
+                                        <div className="banner-cast-image">
+                                            <img src={img} className='e' alt="" />
+                                        </div>
                                         <div className="banner-cast-image">
                                             <img src={img} className='e' alt="" />
                                             <span>O. James ksksmm s ij skj</span>
