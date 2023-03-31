@@ -128,8 +128,8 @@ const MovieBackDrop = ({img}) =>{
                         </div>
                     </div>
 
-                    <div className="movieBackDrop-footer mt-4">
-                        <Link to='/' className='movieBackDrop-play-btn'>
+                    <div className="movieBackDrop-footer">
+                        <Link to='/' className='movieBackDrop-play-btn mt-3=4'>
                             <PlayIcon style={{stroke: 'white'}} />
                             Watch Now
                         </Link>

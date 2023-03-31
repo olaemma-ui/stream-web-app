@@ -273,6 +273,16 @@ img.movieLatest-poster{
         width: 14em !important;
         height: 9em !important;
     }
+    .movieBackDrop-play-btn{
+        padding: .5em;
+        height: 1.7em;
+        width: 8em;
+        color: white;
+        font-size: small;
+        transition: all .3s;
+
+        /* margin-top: 5em !important; */
+    }
     .movieLatest{
         margin: 0em;
     }
