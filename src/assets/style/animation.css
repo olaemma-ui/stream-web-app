@@ -1,0 +1,6 @@
+.slide-left{animation-name: slideLeft;}
+
+@keyframes slideLeft {
+    from{transform: translateX(50em);}
+    to{transform: translateX(0px);}
+}

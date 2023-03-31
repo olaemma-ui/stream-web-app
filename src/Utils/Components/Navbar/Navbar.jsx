@@ -5,7 +5,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar bg-glass app-container app-nav">
+        <nav className="navbar bg-glass app-container app-nav pb-">
             <div className="logo">
                 <Logo className=''/>
             </div>

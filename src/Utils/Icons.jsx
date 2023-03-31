@@ -1,3 +1,4 @@
+import './Components/Components.css'
 export function VideoCameraIcon(props) {
     return (
       <svg fill="none" stroke="currentColor" strokeWidth={2} 
@@ -79,7 +80,7 @@ export function PlayCircleIcon(props) {
     <svg 
       fill="none" 
       stroke="currentColor" 
-      strokeWidth={.5} 
+      strokeWidth={1} 
       width={'25'} 
       height={'22'}
       xmlns="http://www.w3.org/2000/svg" 
@@ -89,3 +90,75 @@ export function PlayCircleIcon(props) {
     </svg>
   );
 }
+
+export function StarIcon(props) {
+  return (
+    <svg 
+      fill="currentColor" 
+      width={'18'} 
+      height={'18'}
+      xmlns="http://www.w3.org/2000/svg" 
+      aria-hidden="true" {...props}>
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+    </svg>
+  );
+}
+
+export function PlayIcon(props) {
+  return (
+    <svg 
+      fill="none" 
+      width={'25'} 
+      height={'22'}
+      xmlns="http://www.w3.org/2000/svg" 
+      aria-hidden="true" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+    </svg>
+  );
+}
+
+export function ArrowTrendingUpIcon(props) {
+  return (
+    <svg 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth={1.5} 
+      viewBox="0 0 24 24" 
+      xmlns="http://www.w3.org/2000/svg" 
+      aria-hidden="true" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+    </svg>
+  );
+}
+
+export function ChartBarIcon(props) {
+  return (
+    <svg 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth={1} 
+      viewBox="0 0 24 30" 
+      xmlns="http://www.w3.org/2000/svg" 
+      aria-hidden="true" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+    </svg>
+  );
+}
+
+export function ClockIcon(props) {
+  return (
+    <svg 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth={1} 
+      viewBox="0 0 24 24" 
+      xmlns="http://www.w3.org/2000/svg" 
+      aria-hidden="true" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+}
+
+
+
+

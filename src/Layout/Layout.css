@@ -10,8 +10,8 @@
     top: -7em; */
 }
 .bg-glass{
-    background-color:  rgba(13, 13, 13, 0.952);
-    backdrop-filter: blur(.15em);   
+    background-color:  rgba(13, 13, 13, 0.516);
+    backdrop-filter: blur(.2em);   
 }
 .bg-img{
     /* background-image: url(../assets/images/coffee.jpg); */
