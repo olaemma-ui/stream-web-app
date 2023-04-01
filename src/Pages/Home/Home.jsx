@@ -1,7 +1,7 @@
 import { MovieBanner } from "../../Utils/Components/MovieBanner/MovieBanner";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { Genres, MovieBackDrop, MovieLatest, MoviePosterCard, SectionNav, Trending } from "../../Utils/Components/Components";
+import { Genres, MovieBackDrop, MovieLatest, MoviePosterCard, SectionNav} from "../../Utils/Components/Components";
 import img from '../../assets/images/poster-1.jpg'
 import img1 from '../../assets/images/black-panther.jpg'
 import img2 from '../../assets/images/coffee.jpg'

@@ -2,7 +2,7 @@ import './Components.css';
 
 import logo from "../../assets/images/logo.png";
 import { Link } from 'react-router-dom';
-import { ChartBarIcon, ClockIcon, PlayCircleIcon, PlayIcon, StarIcon } from '../Icons';
+import { ChartBarIcon, PlayIcon, StarIcon } from '../Icons';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
@@ -65,12 +65,12 @@ const SectionNav = ({navs, className, style})=>{
     return(
         <React.Fragment>
             <div className={"section-heading "+className} style={style}>
-                <a href='#' className="btn text-light section-nav active">
+                <a href='/#' className="btn text-light section-nav active">
                     Trends
                     <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
                 </a>
 
-                <a href='#' className="btn text-light section-nav">
+                <a href='/#' className="btn text-light section-nav">
                     Latest
                 <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
                 </a>

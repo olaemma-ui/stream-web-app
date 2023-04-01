@@ -95,11 +95,11 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 6em !important;
+    width: 12vh !important;
 }
 .banner-cast-image img{
-    width: 7em !important;
-    height: 4em;
+    width: 12vh !important;
+    height: 8vh;
     border-radius: .4em;
     transition: all .3s;
     /* transform: scale(1.2); */

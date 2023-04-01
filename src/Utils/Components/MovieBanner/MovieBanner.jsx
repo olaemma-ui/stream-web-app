@@ -1,8 +1,8 @@
 import { Col, Row } from 'react-bootstrap';
 import img from '../../../assets/images/slider2.jpg';
-import imdb from '../../../assets/images/imdb.png';
+// import imdb from '../../../assets/images/imdb.png';
 import './MovieBanner.css';
-import {PlayCircleIcon, FilmIcon, PlayIcon} from '../../Icons';
+import { PlayIcon} from '../../Icons';
 import { Link } from 'react-router-dom';
 import ReactOwlCarousel from 'react-owl-carousel';
 
@@ -39,9 +39,8 @@ const MovieBanner = () => {
                 items: 3,
             },
             400: {
-                // stagePadding: 0,
-                margin: -40,
-                items: 2,
+                stagePadding: 30,
+                items: 3,
             },
             600: {
                 items: 3,
