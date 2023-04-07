@@ -1,15 +1,15 @@
 import { MovieBanner } from "../../Utils/Components/MovieBanner/MovieBanner";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { Genres, MovieBackDrop, MovieLatest, MoviePosterCard, SectionNav} from "../../Utils/Components/Components";
+import { Genres, MovieBackDrop, MovieLatest, MoviePosterCard, Section, SectionNav, Trending} from "../../Utils/Components/Components";
 import img from '../../assets/images/poster-1.jpg'
 import img1 from '../../assets/images/black-panther.jpg'
 import img2 from '../../assets/images/coffee.jpg'
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css'; 
-import ReactOwlCarousel from 'react-owl-carousel2';
-import { Col, Row } from "react-bootstrap";
-import { ClockIcon } from "../../Utils/Icons";
+import ReactOwlCarousel from 'react-owl-carousel';
+import { Col, Container, Row } from "react-bootstrap";
+import { ChartBarIcon, ClockIcon } from "../../Utils/Icons";
 
 const Home = () =>{
     const carouselOptions ={
@@ -27,8 +27,8 @@ const Home = () =>{
         smartSpeed: 1000,
         rewind: true,
         items: 8,
-        stagePadding: 40,
-        dots: false,
+        // stagePadding: 40,
+        dots: true,
         responsive: {
             0: {
                 items: 2,
@@ -38,22 +38,23 @@ const Home = () =>{
                 items: 2,
             },
             400: {
-                margin: -30,
+                // margin: -30,
                 items: 2,
             },
             600: {
                 items: 3,
             },
             700: {
-                margin: -50,
+                // margin: -50,
                 items: 3,
             },
             800: {
                 items: 3,
             },
             900: {
-                margin: 130,
-                items: 4,
+                // margin: 170,
+                stagePadding: 0,
+                items: 3,
             },
             1000: {
                 items: 4,
@@ -71,29 +72,29 @@ const Home = () =>{
                 items: 6,
             },
             1600: {
-                // margin: 120,
-                items: 6,
+                stagePadding: 0,
+                items: 5,
             },
             1700: {
-                margin: 30,
-                items: 7,
+                // margin: 30,
+                items: 5,
             },
             1800: {
-                margin: 150,
-                items: 9,
+                // margin: 150,
+                stagePadding: 0,
+                items: 5,
             }
         },
     };    
 
     const options2 = {
-        // margin: 20,
         responsiveClass: true,
         autoplay: true,
         smartSpeed: 50,
         rewind: true,
         items: 8,
         stagePadding: 30,
-        // dots: false,
+        dots: true,
         responsive: {
             0: {
                 items: 1,
@@ -166,8 +167,8 @@ const Home = () =>{
                 items: 4,
             },
             1700: {
-                margin: 80,
-                items: 5,
+                // margin: 80,
+                items: 3,
             },
             // 1800: {
             //     margin: 150,
@@ -183,26 +184,25 @@ const Home = () =>{
                 <MovieBanner />
                 <MovieBanner />
             </Carousel>
+            <Section 
+                title={'Trends'}
+                icon={<ChartBarIcon className='section-nav-icon' />}
+            />
+            <ReactOwlCarousel {...options2}>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+            </ReactOwlCarousel> 
+            
             <SectionNav/>
-            <Genres />
-            <ReactOwlCarousel {...{options}} >
-                <MoviePosterCard img={img}/>
-                <MoviePosterCard img={img1}/>
-                <MoviePosterCard img={img2}/>
-                <MoviePosterCard img={img}/>
-                <MoviePosterCard img={img1}/>
-                <MoviePosterCard img={img2}/>
-                <MoviePosterCard img={img}/>
-                <MoviePosterCard img={img1}/>
-                <MoviePosterCard img={img2}/>
-                <MoviePosterCard img={img}/>
-                <MoviePosterCard img={img1}/>
-                <MoviePosterCard img={img2}/>
-            </ReactOwlCarousel>
-
-            <SectionNav/>
-            <Genres />
-            <div className="app-container p-p-4 pt-0">
+            <Container>
+                <Genres />
                 <Row>
                     <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
                         <MoviePosterCard img={img}/>
@@ -252,50 +252,17 @@ const Home = () =>{
                         <MoviePosterCard img={img1}/>
                     </Col>
                 </Row>
-            </div>
-
-            <div className="app-container pt-4">
-                <p className="btn text-light section-title">
-                    Upcoming
-                    <ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
-                </p>
-                <ReactOwlCarousel options = {options2}>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                    <MovieBackDrop img={img2}/>
-                </ReactOwlCarousel>
-            </div>
+                <Section 
+                    title={'Latest'}
+                    icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
+            </Container>
 
             <Carousel {...carouselOptions} centerMode={true}>
                 <MovieLatest poster={img} banner={img} />
                 <MovieLatest poster={img1} banner={img1} />
                 <MovieLatest poster={img2}  banner={img2} />
             </Carousel>
-    
-            <div className="app-container">
-            <p className="btn mt-5 text-light section-title">
-                Popular
-                <ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
-            </p>
-            <ReactOwlCarousel options = {options2}>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-                <MovieBackDrop img={img2}/>
-            </ReactOwlCarousel>
-            </div>
-            
+         
         </div>
     );
 }

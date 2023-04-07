@@ -6,6 +6,21 @@
     padding: 1em;
     color: white;
 }
+.trending-poster{
+    width: 30em;
+    height: 20em;
+}
+.trending-number{
+    position: relative;
+    /* height: 50em;
+    width: 10em; */
+}
+.trending-number .number{
+    font-size: 20em;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+}
 img.poster-img{
     width: 100%;
     height: 80%;
@@ -66,11 +81,6 @@ img.poster-img{
     color: white;
     text-overflow: ellipsis;
 }
-.trending-number{
-    position: relative;
-    height: 16em;
-    width: 10em;
-}
 .poster-details-title{
     font-size: .7em;
     margin: 0;
@@ -95,11 +105,11 @@ img.poster-img{
     display: flex;
     justify-content: space-between;
     gap: .5em;
-    padding: .5em;
+    /* padding: .5em; */
     align-items: center;
     border-bottom: solid 2px var(--app-color-dark-2);
-    padding-bottom: 0em;
-    margin-bottom: -1em;
+    /* padding-bottom: 0em; */
+    margin-bottom: 1em;
 
 }
 .section-title, .section-nav{
@@ -142,7 +152,7 @@ img.poster-img{
     top: 1.3em;
     left: 8em;
     /* right: 30%; */
-    width: 50vw;
+    width: 61vw;
     height: .2em;
     bottom: -0.1em;
     border-radius: 1em;
@@ -154,6 +164,7 @@ svg.section-nav-icon{
     transform: scale(1.1);
 }
 .genres{
+    /* margin-top: 2em; */
     display: flex;
     /* justify-content: space-between; */
     gap: 2em;
@@ -184,9 +195,9 @@ button.genre-btn:focus{
 }
 
 .movieBackDrop{
-    width: 20em;
-    height: 12em;
-    border-radius: .4em;
+    width: 35em;
+    height: 20em;
+    /* border-radius: .4em; */
 
     background-repeat: no-repeat;
     background-position: top;
@@ -202,7 +213,7 @@ button.genre-btn:focus{
     background-color: rgba(0, 0, 0, 0.653);
     height: 100%;
     backdrop-filter: blur(.1em);
-    border-radius: .4em;
+    /* border-radius: .4em; */
     padding: 1em;
     transform: scale(0) translateX(20em);
     transition: all .3s;
@@ -265,13 +276,17 @@ img.movieLatest-poster{
     font-size: 2em;
 }
 @media screen and (max-width: 360px) {
-    .poster-card{
+    /* .poster-card{
         height: 16em !important;
         width: 7em !important;
+    } */
+    .poster-card{
+        height: 85vw !important;
+        width: 43vw !important;
     }
     .movieBackDrop{
-        width: 14em !important;
-        height: 9em !important;
+        width: 80vw !important;
+        height: 50vw !important;
     }
     .movieBackDrop-play-btn{
         padding: .5em;
@@ -297,7 +312,22 @@ img.movieLatest-poster{
         display: none !important;
     }
 }
+.circle-avatar-img{
+    border-radius: 100%;
+    width: 5vh !important;
+    height: 5vh;
+    background-color: green;
+    border: solid 3px white;
+}
+.avatars{
+    margin: 1em 0em 3em 0em;
+    position: relative;
+}
+.avatars .circle-avatar-img{
+    position: absolute;
+}
 @media screen and (max-width: 580px) and (min-width: 361px) {  
+    
     .movieLatest{
         margin: 0em;
     }
@@ -305,20 +335,20 @@ img.movieLatest-poster{
         display: none !important;
     }
     .movieLatest-title{
-        font-size: 1em !important;
+        /* font-size: 1.5em !important; */
     }
     .movieLatest-about{
         font-size: .8em;
         margin-top: 1em;
     }
     .movieBackDrop{
-        width: 17em;
-        height: 11em;
+        width: 80vw !important;
+        height: 50vw !important;
     }
 
     .poster-card{
-        height: 20em !important;
-        width: 9em !important;
+        height: 85vw !important;
+        width: 43vw !important;
     }
 
     .poster-rating{
@@ -362,7 +392,7 @@ img.movieLatest-poster{
 
 @media screen and (max-width: 990px) {
     .poster-card{
-        height: 25em;
+        height: 23em;
         width: 12em;
     }
     img.movieLatest-poster{
@@ -378,14 +408,14 @@ img.movieLatest-poster{
 }
 @media screen and (max-width: 1300px) {
     .poster-card{
-        height: 26em;
-        width: 14em;
+        height: 30em;
+        width: 20em;
     }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .poster-card{
         height: 23em;
         width: 12em;
     }
-}
+} */

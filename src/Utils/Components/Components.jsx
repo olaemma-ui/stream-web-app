@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.png";
 import { Link } from 'react-router-dom';
 import { ChartBarIcon, PlayIcon, StarIcon } from '../Icons';
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Logo = ({className})=>{
     return(
@@ -55,7 +55,7 @@ const Trending = ({number, img}) =>{
                 <h1 className="number">
                     1
                 </h1>
-                <MoviePosterCard img={img} />
+                <img src={img} className='trending-poste' alt="" srcset="" />
             </div>
        </React.Fragment>
     );
@@ -64,24 +64,26 @@ const Trending = ({number, img}) =>{
 const SectionNav = ({navs, className, style})=>{
     return(
         <React.Fragment>
-            <div className={"section-heading "+className} style={style}>
-                <a href='/#' className="btn text-light section-nav active">
-                    Trends
-                    <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
-                </a>
+           <Container>
+                <div className={"section-heading "+className} style={style}>
+                    <a href='/#' className="btn text-light section-nav active">
+                        Trends
+                        <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
+                    </a>
 
-                <a href='/#' className="btn text-light section-nav">
-                    Latest
-                <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
-                </a>
-            </div>
+                    {/* <a href='/#' className="btn text-light section-nav">
+                        Latest
+                    <ChartBarIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />
+                    </a> */}
+                </div>
+           </Container>
         </React.Fragment>
     );
 }
 
 const Genres = ({genres = []})=>{
     return(
-        <div className="app-container">
+        <React.Fragment>
             <div className="genres">
                 {
                     genres.map((e) => 
@@ -105,7 +107,7 @@ const Genres = ({genres = []})=>{
                     Action
                 </button>
             </div>
-        </div>
+        </React.Fragment>
     );
 }
 
@@ -186,6 +188,33 @@ const MovieLatest = ({banner, poster}) => {
         </React.Fragment>
     );
 }
+
+const Section = ({title, icon})=>{
+    return(
+        <React.Fragment>
+           <Container>
+                <p className="btn text-light section-title mt-5">
+                    {title}
+                    {icon}
+                    {/* <ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' /> */}
+                </p>
+           </Container>
+        </React.Fragment>
+    );
+}
+
+const CircleAvatar = ({img, left, zIndex})=>(
+    <React.Fragment>
+        <img 
+            src={img} 
+            className='circle-avatar-img' 
+            style={{
+                zIndex,
+                left
+            }} alt="" />
+    </React.Fragment>
+);
+
 export{
     Logo,
     NavLink,
@@ -195,4 +224,6 @@ export{
     Genres,
     MovieBackDrop,
     MovieLatest,
+    Section,
+    CircleAvatar,
 }

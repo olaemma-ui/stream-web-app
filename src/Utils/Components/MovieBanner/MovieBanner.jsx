@@ -1,10 +1,11 @@
 import { Col, Row } from 'react-bootstrap';
 import img from '../../../assets/images/slider2.jpg';
-// import imdb from '../../../assets/images/imdb.png';
+import imdb from '../../../assets/images/imdb.png';
 import './MovieBanner.css';
 import { PlayIcon} from '../../Icons';
 import { Link } from 'react-router-dom';
 import ReactOwlCarousel from 'react-owl-carousel';
+import { CircleAvatar } from '../Components';
 
 const MovieBanner = () => {
     const options = {
@@ -26,16 +27,16 @@ const MovieBanner = () => {
             320: {
                 margin: 20,
                 stagePadding: 20,
-                items: 4,
+                items: 1,
             },
             340: {
                 // margin: 40,
                 stagePadding: 30,
-                items: 5,
+                items: 1,
             },
             380: {
                 stagePadding: 35,
-                margin: 0,
+                margin: 30,
                 items: 3,
             },
             400: {
@@ -59,8 +60,9 @@ const MovieBanner = () => {
                 items: 6,
             },
             1000: {
-                margin: -20,
-                items: 4,
+                stagePadding: 15,
+                margin: 20,
+                items: 8,
             },
             // 1100: {
             //     margin: -160,
@@ -114,10 +116,10 @@ const MovieBanner = () => {
                                     <div className="pg">
                                         PG-14
                                     </div>
-                                    {/* <div className="imdb">
+                                    <div className="imdb">
                                         <img src={imdb} alt="" srcset="" />
-                                    </div> */}
-                                    {/* <span>10.5</span> */}
+                                    </div>
+                                    <span>10.5</span>
 
                                     <span className='text-white'>2h 40m</span>
                                 </div>
@@ -137,47 +139,16 @@ const MovieBanner = () => {
                                     Genres : &nbsp; <span className='text-white'>Drama, Action, Adventure</span>
                                 </p>
 
+                                <div className="avatars">
+                                    <CircleAvatar img={img} zIndex={1} left={0} alt={'avatar'} />
+                                    <CircleAvatar img={img} zIndex={1} left={25} alt={'avatar'} />
+                                    <CircleAvatar img={img} zIndex={1} left={45} alt={'avatar'} />
+                                </div>
+
                                 <Link className="btn btn-app-primary play-btn mt-4">
                                     <PlayIcon fill={'white'} className='mb-1'/> Watch Now
                                 </Link>
-
-                                <div className="banner-cast">
-                                    
-                                    <ReactOwlCarousel {...options}>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                            <span>O. James ksksmm s ij skj</span>
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                            
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                            <span>O. James ksksmm s ij skj</span>
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                            
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                        </div>
-                                        <div className="banner-cast-image">
-                                            <img src={img} className='e' alt="" />
-                                        </div>
-                                    </ReactOwlCarousel>
-                                    {/* <img src={img} className='banner-cast-image' alt="" />
-                                    <img src={img} className='banner-cast-image' alt="" />
-                                    <img src={img} className='banner-cast-image' alt="" />
-                                    <img src={img} className='banner-cast-image' alt="" /> */}
-                                </div>
+                                
                             </Col>
                        </Row>
                     </div>

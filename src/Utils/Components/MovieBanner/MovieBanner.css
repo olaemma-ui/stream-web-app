@@ -17,15 +17,16 @@ body{
 }
 .banner-color{
     width: 100%;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     max-height: max-content;
     background: linear-gradient(250deg, transparent, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.948));
     /* background: rgba(0, 0, 0, 0.33); */
     /* backdrop-filter: blur(.1em); */
 }
 .banner-content{
-    min-height: 90vh;
-    padding: 5em 0;
+    min-height: 100vh;
+    padding: 5em 0 0 0;
+    /* background-color: green; */
 }
 
 .movie-banner-heading{
@@ -37,9 +38,22 @@ body{
 }
 .movie-banner-title{
     color: white;
-    font-size: 3.5em;
+    font-size: 4em;
     text-overflow: clip !important;
     margin: .6em 0em;
+
+    background: url(../../../assets/images/texure.jpg);
+	background-repeat: repeat-x;
+	background-position: 100% 100%;
+	color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing:-2px;
+
+    font-family: spaceBold;
 }
 .rating{
     display: flex;
@@ -50,10 +64,10 @@ body{
     border: solid 2px white;
     padding: .3em .8em;
     border-radius: .3em;
-    font-size: .6em;
+    font-size: 1em;
 }.rating span{
     padding: 0em;
-    font-size: .6em;
+    font-size: 1em;
 }
 .movie-about{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,14 +87,12 @@ body{
 }
 .banner-cast{
     display: flex;
-    position: relative;
-    margin-top: 2em;
-    gap: .5em;
+    /* position: relative;x */
     /* max-width: 40em; */
     height: 4em;
 }
 .banner-cast-image{
-    width: 5vh !important;
+    width: 5vw !important;
     /* height: 5vh; */
     transition: all .3s;
     font-size: .7em;
@@ -90,28 +102,35 @@ body{
     gap: .5em;
     /* transform: scale(1.2); */
 }
-.banner-cast-image span{
+/* .banner-cast-image span{
     text-overflow: ellipsis !important;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 12vh !important;
-}
+} */
 .banner-cast-image img{
     width: 12vh !important;
     height: 8vh;
-    border-radius: .4em;
+    /* border-radius: .4em; */
     transition: all .3s;
+    cursor: pointer;
     /* transform: scale(1.2); */
 }
-.banner-cast .banner-cast-image:hover img{
+/* .banner-cast .banner-cast-image:hover img{
     transform: scale(1.2);
     box-shadow: 0em .0em .5em .1em rgb(34, 34, 34);
     cursor: pointer;
-}
+} */
 @media screen and (max-width: 580px) {   
+    .banner-cast-image{
+        width: 22vw !important;
+    }
+    .banner-cast-image span{
+        width: 22vw !important;
+    }
     .banner-content{
-        min-height: 100vh !important;
+        /* min-height: 100vh !important; */
         padding-top: 5em;
     }
     .banner-data{
@@ -134,7 +153,7 @@ body{
 
 @media screen and (max-width: 990px) {
     .banner-content{
-        min-height: 80vh !important;
-        padding: 5em 0;
+        /* min-height: 100vh !important; */
+        /* padding: 5em 0 0 0; */
     }
 }

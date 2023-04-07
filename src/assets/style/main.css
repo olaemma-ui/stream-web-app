@@ -64,7 +64,7 @@ p, h1,h2,h3,h4,h5,h6{
 .play-btn{
     width: 10em !important;
     height: 3em;
-    border-radius: 100em !important;
+    border-radius: 0em !important;
     padding: .6em !important;
     box-shadow: .1em 1em 2em -1em var(--app-color);
 }
@@ -102,25 +102,25 @@ p, h1,h2,h3,h4,h5,h6{
 .app-container{
     padding: 1em 7em 1em 7em !important;
 }
-.section-heading{
+/* .section-heading{
     margin: 1em 7em 1em 7em;
-}
-.genres{
+} */
+/* .genres{
     margin: 1em 0em 0em 0em;
-}
+} */
 
 @media screen and (max-width: 580px ) {
     .app-container{
         padding: 1.5em !important;
     }
 
-    .section-heading{
+    /* .section-heading{
         margin: 1.5em;
-    }
+    } */
 
-    .genres{
+    /* .genres{
         margin: 0em 1em 0em 0em !important;
-    }
+    } */
     
 }
 
@@ -130,10 +130,10 @@ p, h1,h2,h3,h4,h5,h6{
         padding: 2em !important;
         /* padding: 1.5em 0em 3em 1.5em !important; */
     }
-    .section-heading{
+    /* .section-heading{
         margin: 0em 4em 0em 4em;
-    }
-    .genres{
+    } */
+    /* .genres{
         margin: 0em 2em 0em 2em;
-    }
+    } */
 }
