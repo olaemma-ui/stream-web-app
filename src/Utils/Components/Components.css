@@ -314,20 +314,26 @@ img.movieLatest-poster{
 }
 .circle-avatar-img{
     border-radius: 100%;
-    width: 5vh !important;
-    height: 5vh;
+    width: 4vh !important;
+    height: 4vh;
     background-color: green;
     border: solid 3px white;
 }
 .avatars{
-    margin: 1em 0em 3em 0em;
+    margin: 1em 0em 4em 0em;
     position: relative;
 }
 .avatars .circle-avatar-img{
     position: absolute;
 }
 @media screen and (max-width: 580px) and (min-width: 361px) {  
-    
+    .circle-avatar-img{
+        width: 5vh !important;
+        height: 5vh;
+    }
+    .avatars{
+        margin: 1em 0em 3em 0em;
+    }
     .movieLatest{
         margin: 0em;
     }
