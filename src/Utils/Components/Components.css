@@ -42,7 +42,7 @@ img.poster-img{
 }
 
 .poster-rating{
-    font-size: .5em;
+    /* font-size: 1.2vh; */
     margin: 0em !important;
     display: flex;
     justify-content: space-between;
@@ -50,6 +50,7 @@ img.poster-img{
 }
 .poster-rating > p{
     margin: 0;
+    font-size: 1.2vh !important;
     color: var(--app-color-dark-2);
 }
 .poster-rating > p:last-child{
@@ -57,8 +58,9 @@ img.poster-img{
     align-items: center;
 }
 .poster-rating > p > span{
-    height: 1.2em;
-    width: 1.2em;
+    /* height: 1.2em;
+    width: 1.2em; */
+    /* font-size: 1.2vh; */
     color: var(--app-gold);
 }
 .poster-header{
@@ -77,7 +79,7 @@ img.poster-img{
     border: solid 2px var(--app-color);
 }
 .poster-title{
-    font-size: .6em;
+    font-size: 1.2vh;
     margin: 0em;
     color: white;
     text-overflow: ellipsis;
@@ -196,8 +198,8 @@ button.genre-btn:focus{
 }
 
 .movieBackDrop{
-    width: 40vw;
-    height: 20vh;
+    width: 28vw;
+    height: 25vh;
     /* border-radius: .4em; */
 
     background-repeat: no-repeat;
@@ -223,6 +225,7 @@ button.genre-btn:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
     /* background-color: green; */
     padding: 1em;
 }
@@ -293,10 +296,10 @@ img.movieLatest-poster{
         width: 7em !important;
     } */
     .poster-card{
-        height: 55vw !important;
-        width: 25vw !important;
-        /* background-color: blue; */
-        /* margin-left: -.em !important; */
+        /* height: 60vw !important;
+        width: 30vw !important; */
+        height: 65vw !important;
+        width: 100% !important;
     }
     .movieBackDrop{
         width: 80vw !important;
@@ -373,10 +376,9 @@ img.movieLatest-poster{
         height: 50vw !important;
     }
 
-    /* .poster-card{
-        height: 60vw !important;
-        width: 26vw !important;
-    } */
+    .poster-card{
+        /* height: 60vw !important; */
+    }
 
     .poster-rating{
         /* font-size: .7em;
@@ -418,13 +420,28 @@ img.movieLatest-poster{
 }
 
 @media screen and (max-width: 990px) {
-    /* .poster-card{
-        height: 23em;
-        width: 20vw;
+    
+    .poster-card{
+        /* height: 40vw !important; */
+        /* background-color: blue; */
+    }
+    /* .poster-rating > p > span{
+        width: 1.2em;
+        font-size: .8em !important;
     } */
+    .movieBackDrop{
+        width: 44vw;
+        height: 25vh;
+    }
+    .poster-rating > p{
+        font-size: 1.5em;
+    }
+    .poster-header{
+        font-size: 1.3em;
+    }
     img.movieLatest-poster{
-        height: 20em;
-        width: 12em !important;
+        height: 37vw;
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -432,11 +449,19 @@ img.movieLatest-poster{
         height: 23em;
         width: 12em;
     } */
+
+    /* .poster-card{
+        height: 45vw !important;
+    } */
 }
 @media screen and (max-width: 1300px) {
     /* .poster-card{
         height: 30em;
         width: 20em;
+    } */
+
+    /* .poster-card{
+        height: 45vw !important;
     } */
 }
 

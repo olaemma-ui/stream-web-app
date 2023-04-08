@@ -205,53 +205,42 @@ const Home = () =>{
             <Container>
                 <Genres />
                 <Row>
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
-                        <MoviePosterCard img={img2}/>
-                    </Col>
-
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}  className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
-                        <MoviePosterCard img={img2}/>
-                    </Col>
-
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
-                        <MoviePosterCard img={img1}/>
-                    </Col>
-
-                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}>
-                        <MoviePosterCard img={img1}/>
-                    </Col>
                 </Row>
                 <Section 
                     title={'Latest'}
