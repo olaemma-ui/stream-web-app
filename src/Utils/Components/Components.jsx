@@ -120,7 +120,7 @@ const MovieBackDrop = ({img}) =>{
                     <p className="movieBackDrop-title">
                         Rise Of the PLANET of APES Rise Of the PLANET of APES Rise Of the PLANET of APES
                     </p>
-                    <div className="movieBackDrop-body mb-3">
+                    <div className="movieBackDrop-body mb-2">
                         <div className="data">
                             <span>Lang :</span> EN
                         </div>

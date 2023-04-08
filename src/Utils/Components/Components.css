@@ -29,8 +29,8 @@ img.poster-img{
 }
 .poster-card{
     margin-top: 1.3em;
-    height: 24em;
-    width: 12em;
+    height: 30vh;
+    width: 18vw;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -195,8 +195,8 @@ button.genre-btn:focus{
 }
 
 .movieBackDrop{
-    width: 30em;
-    height: 18em;
+    width: 40vw;
+    height: 20vh;
     /* border-radius: .4em; */
 
     background-repeat: no-repeat;
@@ -242,10 +242,8 @@ button.genre-btn:focus{
     background-color: var(--app-color);
     border: none;
     border-radius: 5em;
-    /* padding: 1em .8em 1.3em .8em !important; */
+    padding: .5em 1em !important;
     width: 10em;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
     color: white;
     transition: all .3s;
 }
@@ -417,26 +415,26 @@ img.movieLatest-poster{
 }
 
 @media screen and (max-width: 990px) {
-    .poster-card{
+    /* .poster-card{
         height: 23em;
-        width: 12em;
-    }
+        width: 20vw;
+    } */
     img.movieLatest-poster{
         height: 20em;
         width: 12em !important;
     }
 }
 @media screen and (max-width: 1200px) {
-    .poster-card{
+    /* .poster-card{
         height: 23em;
         width: 12em;
-    }
+    } */
 }
 @media screen and (max-width: 1300px) {
-    .poster-card{
+    /* .poster-card{
         height: 30em;
         width: 20em;
-    }
+    } */
 }
 
 /* @media screen and (max-width: 800px) {
