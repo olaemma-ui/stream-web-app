@@ -24,8 +24,8 @@ body{
     /* backdrop-filter: blur(.1em); */
 }
 .banner-content{
-    min-height: 100vh;
-    padding: 5em 0 0 0;
+    height: 100vh;
+    /* padding: 5em 0 0 0; */
     /* background-color: green; */
 }
 
@@ -40,7 +40,7 @@ body{
     color: white;
     font-size: 4em;
     text-overflow: clip !important;
-    margin: .6em 0em;
+    margin: .4em 0em;
 
     background: url(../../../assets/images/texure.jpg);
 	background-repeat: repeat-x;
@@ -59,19 +59,22 @@ body{
     display: flex;
     gap: .5em;
     align-items: center;
+    margin-bottom: 1em;
 }
 .rating .pg{
     border: solid 2px white;
-    padding: .3em .8em;
+    padding: .1em .5em;
     border-radius: .3em;
-    font-size: 1em;
-}.rating span{
+    font-size: .7em;
+    font-family: spaceBold;
+}
+.rating span{
     padding: 0em;
-    font-size: 1em;
+    font-size: .8em;
 }
 .movie-about{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 1.5em 0em;
+    margin: 0em 0em 2em 0;
 }
 .banner-details{
     /* background-color: green;
@@ -81,6 +84,9 @@ body{
     gap: 1em;
     display: flex;
 
+}
+.imdb img{
+    width: 2.5em !important;
 }
 .banner-data{
     margin: .5em 0em!important;
@@ -130,20 +136,26 @@ body{
         width: 22vw !important;
     }
     .banner-content{
-        /* min-height: 100vh !important; */
-        padding-top: 5em;
+        height: 80vh !important;
+        padding-top: 0em !important;
+        margin-top: 3em;
     }
     .banner-data{
+        font-size: .7em;
+    }
+    .movie-about{
         font-size: .7em;
     }
     /* .home{
         max-width: 100vw !important;
     } */
     .movie-banner-title{
-        font-size: 2em;
+        font-size: 2.5em;
+        font-family: spaceBold;
     }
     .movie-banner-content{
-        padding-top: 7em !important;
+        /* height: 20em; */
+        /* padding-top: 7em !important; */
     }
     .movie-banner-heading{
         font-size: .8em;
@@ -153,7 +165,7 @@ body{
 
 @media screen and (max-width: 990px) {
     .banner-content{
-        /* min-height: 100vh !important; */
-        /* padding: 5em 0 0 0; */
+        min-height: 80vh !important;
+        padding: 5em 0 0 0;
     }
 }

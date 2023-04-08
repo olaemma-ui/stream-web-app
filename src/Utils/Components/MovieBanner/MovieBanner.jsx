@@ -112,6 +112,10 @@ const MovieBanner = () => {
                                     Clash Of The Titans in The Wrath of Men
                                 </h3>
                                 
+                                <p className='movie-about'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo vero, minus nobis, veritatis corrupti atque illum tenetur sint rerum nesciunt asperiores sequi. Quia dolore delectus id debitis in incidunt?
+                                </p>
+
                                 <div className="rating">
                                     <div className="pg">
                                         PG-14
@@ -121,10 +125,11 @@ const MovieBanner = () => {
                                     </div>
                                     <span>10.5</span>
 
-                                    <span className='text-white'>2h 40m</span>
+                                    {/* <span className='text-white'></span> */}
                                 </div>
-                                <p className='movie-about'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo vero, minus nobis, veritatis corrupti atque illum tenetur sint rerum nesciunt asperiores sequi. Quia dolore delectus id debitis in incidunt?
+
+                                <p className="banner-data text-app-primary">
+                                    Duration : &nbsp; <span className='text-white'>2h 40m</span>
                                 </p>
 
                                 <p className="banner-data text-app-primary">

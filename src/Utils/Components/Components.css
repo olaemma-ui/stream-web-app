@@ -167,7 +167,7 @@ svg.section-nav-icon{
     /* margin-top: 2em; */
     display: flex;
     /* justify-content: space-between; */
-    gap: 2em;
+    gap: 1em;
     /* background-color: yellow; */
     /* padding: 0em !important; */
     overflow-x: auto;
@@ -177,7 +177,7 @@ svg.section-nav-icon{
     border: none;
     border-radius: 4em;
     background-color: var(--app-color-dark-2);
-    min-width: 8em;
+    min-width: 6em;
     height: 2.5em;
     font-size: .8em;
     transition: all .5s;
@@ -195,8 +195,8 @@ button.genre-btn:focus{
 }
 
 .movieBackDrop{
-    width: 35em;
-    height: 20em;
+    width: 30em;
+    height: 18em;
     /* border-radius: .4em; */
 
     background-repeat: no-repeat;
@@ -212,18 +212,25 @@ button.genre-btn:focus{
 .movieBackDrop-color{
     background-color: rgba(0, 0, 0, 0.653);
     height: 100%;
-    backdrop-filter: blur(.1em);
+    /* backdrop-filter: blur(.1em); */
     /* border-radius: .4em; */
-    padding: 1em;
     transform: scale(0) translateX(20em);
     transition: all .3s;
     border-left: solid 5px var(--app-color);
+}
+.movieBackDrop-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: green; */
+    padding: 1em;
 }
 .movieBackDrop-title{
     margin: 0;
     margin-bottom: .5em;
     text-overflow: ellipsis !important;
     overflow-y: hidden;
+    font-size: 1.3em;
     max-height: 3em;}
 .movieBackDrop-body .data {
     font-size: .8em;
@@ -234,10 +241,11 @@ button.genre-btn:focus{
 .movieBackDrop-play-btn{
     background-color: var(--app-color);
     border: none;
-    border-radius: .2em;
-    padding: .5em;
-    height: 2.5em;
+    border-radius: 5em;
+    /* padding: 1em .8em 1.3em .8em !important; */
     width: 10em;
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
     color: white;
     transition: all .3s;
 }
@@ -246,9 +254,6 @@ button.genre-btn:focus{
     color: white;
 }
 .movieLatest{
-    min-height: 55vh;
-    /* min-height: 55vh; */
-    border-radius: 1em;
     margin: 1em;
     box-shadow: 0em 0em .5em .1em rgb(0, 0, 0);
     background-size: cover;
@@ -256,11 +261,18 @@ button.genre-btn:focus{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.movieLatest-btn{
+    border-radius: 4em !important;
+    padding-left: 0 !important;
+    padding-right: 0em !important;
+
+    width: 9em !important;
+}
 .movieLatest-color{
     background: linear-gradient(200deg, transparent, rgb(0, 0, 0), rgba(0, 0, 0, 0.764));
-    backdrop-filter: blur(.2em);
-    min-height: 55vh;
-    padding-top: 0em !important;
+    /* backdrop-filter: blur(.2em); */
+    /* min-height: 50vh; */
+    padding: 0em 2em !important;
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -268,12 +280,13 @@ button.genre-btn:focus{
 }
 img.movieLatest-poster{
     border-radius: 1em;
-    height: 24em;
+    height: 22em;
     width: 14em !important;
+    margin-bottom: 2em;
     box-shadow: 0em .5em .5em .1em rgb(0, 0, 0);
 }
 .movieLatest-title{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 @media screen and (max-width: 360px) {
     /* .poster-card{
@@ -289,9 +302,9 @@ img.movieLatest-poster{
         height: 50vw !important;
     }
     .movieBackDrop-play-btn{
-        padding: .5em;
-        height: 1.7em;
-        width: 8em;
+        /* padding: em; */
+        /* height: 1.7em; */
+        /* width: 8em; */
         color: white;
         font-size: small;
         transition: all .3s;
@@ -343,6 +356,13 @@ img.movieLatest-poster{
     .movieLatest-title{
         /* font-size: 1.5em !important; */
     }
+    .movieBackDrop-play-btn{
+        padding: 1em;
+        /* width: 8em; */
+        color: white;
+        font-size: small;
+        transition: all .3s;
+    }
     .movieLatest-about{
         font-size: .8em;
         margin-top: 1em;
@@ -353,8 +373,8 @@ img.movieLatest-poster{
     }
 
     .poster-card{
-        height: 85vw !important;
-        width: 43vw !important;
+        height: 60vw !important;
+        width: 26vw !important;
     }
 
     .poster-rating{
@@ -390,9 +410,9 @@ img.movieLatest-poster{
         bottom: 0em;
     }
     .genre-btn{
-        min-width: 7em;
-        height: 2.5em;
-        font-size: .8em;
+        min-width: 6em;
+        /* height: 2em; */
+        font-size: .7em;
     }
 }
 

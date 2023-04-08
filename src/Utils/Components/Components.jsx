@@ -2,7 +2,7 @@ import './Components.css';
 
 import logo from "../../assets/images/logo.png";
 import { Link } from 'react-router-dom';
-import { ChartBarIcon, PlayIcon, StarIcon } from '../Icons';
+import { ChartBarIcon, PlayCircleIcon, PlayIcon, StarIcon } from '../Icons';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -120,7 +120,7 @@ const MovieBackDrop = ({img}) =>{
                     <p className="movieBackDrop-title">
                         Rise Of the PLANET of APES Rise Of the PLANET of APES Rise Of the PLANET of APES
                     </p>
-                    <div className="movieBackDrop-body">
+                    <div className="movieBackDrop-body mb-3">
                         <div className="data">
                             <span>Lang :</span> EN
                         </div>
@@ -129,13 +129,10 @@ const MovieBackDrop = ({img}) =>{
                             <span>Duration :</span> 2h 20m
                         </div>
                     </div>
-
-                    <div className="movieBackDrop-footer">
-                        <Link to='/' className='movieBackDrop-play-btn mt-3=4'>
-                            <PlayIcon style={{stroke: 'white'}} />
-                            Watch Now
-                        </Link>
-                    </div>
+                    <Link to='/' className='movieBackDrop-play-btn'>
+                        Watch Now &nbsp;
+                        <PlayCircleIcon style={{stroke: 'white', transform: 'scale(1.1)'}} />
+                    </Link>
                 </div>
             </div>
         </div>
@@ -160,9 +157,9 @@ const MovieLatest = ({banner, poster}) => {
                                 </div>
                                 <span className='text-white'>2h 40m</span>
                             </div>
-                            <p className='movieLatest-about'>
+                            {/* <p className='movieLatest-about'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nemo vero, minus nobis, veritatis corrupti atque illum tenetur sint rerum nesciunt asperiores sequi. Quia dolore delectus id debitis in incidunt?
-                            </p>
+                            </p> */}
                             <p className="banner-data text-app-primary">
                                 Language : &nbsp; <span className='text-white'>EN</span>
                             </p>
@@ -174,8 +171,9 @@ const MovieLatest = ({banner, poster}) => {
                             <p className="banner-data text-app-primary">
                                 Genres : &nbsp; <span className='text-white'>Drama, Action, Adventure</span>
                             </p>
-                            <Link className="btn btn-app-primary play-btn mt-4">
-                                <PlayIcon fill={'white'} className='mb-1'/> Watch Now
+                            <Link className="btn btn-app-primary movieLatest-btn play-btn mt-4">
+                                Watch Now &nbsp;
+                                <PlayCircleIcon style={{transform: 'scale(1.5)'}} className='mb-1'/>
                             </Link>
                             
                         </Col>

@@ -13,11 +13,11 @@ import { ChartBarIcon, ClockIcon } from "../../Utils/Icons";
 
 const Home = () =>{
     const carouselOptions ={
-        'infiniteLoop': true,
-        'autoPlay': false,
-        'centerMode':false,
-        'useKeyboardArrows': true,
-        'showThumbs': false
+        infiniteLoop: true,
+        autoPlay: false,
+        centerMode:false,
+        useKeyboardArrows: true,
+        showThumbs: false,
     }
 
     const options = {
@@ -204,64 +204,65 @@ const Home = () =>{
             <Container>
                 <Genres />
                 <Row>
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img2}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img2}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
 
-                    <Col lg={3} md={4} xxl={2} xl={3} xs={6}>
+                    <Col lg={3} md={4} xxl={2} xl={3} xs={4}>
                         <MoviePosterCard img={img1}/>
                     </Col>
                 </Row>
                 <Section 
                     title={'Latest'}
                     icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
-            </Container>
 
-            <Carousel {...carouselOptions} centerMode={true}>
-                <MovieLatest poster={img} banner={img} />
-                <MovieLatest poster={img1} banner={img1} />
-                <MovieLatest poster={img2}  banner={img2} />
-            </Carousel>
+                <Carousel {...carouselOptions} centerMode={false}>
+                    <MovieLatest poster={img} banner={img} />
+                    <MovieLatest poster={img1} banner={img1} />
+                    <MovieLatest poster={img2}  banner={img2} />
+                </Carousel>
+                
+            </Container>
          
         </div>
     );
