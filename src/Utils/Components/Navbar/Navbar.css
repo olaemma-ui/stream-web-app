@@ -1,18 +1,19 @@
 .logo:not(img.logo){
     /* width: 18em; */
-    height: 100%;
+    /* height: 2em; */
     /* background-color:  #0d0d0d !important; */
     /* backdrop-filter: blur(0.625em) !important; */
     /* padding: .4em 2em; */
 }
 img.logo{
-    width: 8em;
-    height: 2.5em;
+    width: 6em;
+    height: 2em;
+    display: block;
+    /* padding-bottom: 1em; */
 }
 .app-nav{
     margin: 0;
     align-items: center !important; 
-    /* background-color: rgba(0, 0, 0, 0.078); */
     position: fixed;
     width: 100% !important;
     z-index: 99;
@@ -34,6 +35,7 @@ img.logo{
 }
 .btn-group .icon{
     color: rgb(170, 170, 170);
+    transform: scale(.8);
 }
 .nav-link{
     font-size: 1em;

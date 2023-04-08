@@ -180,7 +180,7 @@ const Home = () =>{
 
     return (
         <div className="home">
-            <Carousel {...carouselOptions} className="bg-dark">
+            <Carousel {...carouselOptions}>
                 <MovieBanner />
                 <MovieBanner />
                 <MovieBanner />
@@ -246,12 +246,72 @@ const Home = () =>{
                     title={'Latest'}
                     icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
             </Container>
-            <Carousel {...carouselOptions} centerMode={false}>
-                <MovieLatest poster={img} banner={img} />
-                <MovieLatest poster={img1} banner={img1} />
-                <MovieLatest poster={img2}  banner={img2} />
-            </Carousel>
-         
+            <Container className="p-0">
+                <Carousel {...carouselOptions} centerMode={false}>
+                    <MovieLatest poster={img} banner={img} />
+                    <MovieLatest poster={img1} banner={img1} />
+                    <MovieLatest poster={img2}  banner={img2} />
+                </Carousel>
+            </Container>
+            
+            <Container>
+                <Section 
+                    title={'Movies'}
+                    icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
+                <Row>
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4}  className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img}/>
+                    </Col>
+
+                    <Col lg={3} md={3} xxl={2} xl={3} xs={4} className="p-2">
+                        <MoviePosterCard img={img1}/>
+                    </Col>
+
+                </Row>
+            </Container>
+
+            <Section 
+                title={'Recomended'}
+                icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
+            <ReactOwlCarousel {...options2} smartSpeed={1000}>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+                <MovieBackDrop img={img2}/>
+            </ReactOwlCarousel> 
         </div>
     );
 }

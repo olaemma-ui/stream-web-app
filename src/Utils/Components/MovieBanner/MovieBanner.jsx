@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import ReactOwlCarousel from 'react-owl-carousel';
 import { CircleAvatar } from '../Components';
 
-const MovieBanner = () => {
+const MovieBanner = ({className}) => {
     const options = {
         // margin: 30,
         responsiveClass: true,
@@ -103,7 +103,7 @@ const MovieBanner = () => {
             <section className="banner" style={{backgroundImage: `url(${img})`}}>
                 <div className="banner-color">
                     <div className="app-container pb-0">
-                       <Row className='align-items-center banner-content'>
+                       <Row className={`align-items-center banner-content ${className}`}>
                             <Col lg={8} md={12}>
                                 <p className="movie-banner-heading">
                                     BEST OF 2022
