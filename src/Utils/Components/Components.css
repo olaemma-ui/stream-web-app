@@ -29,8 +29,8 @@ img.poster-img{
 }
 .poster-card{
     margin-top: 1.3em;
-    height: 30vh;
-    width: 18vw;
+    /* height: 30vh;
+    width: 18vw; */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -42,13 +42,14 @@ img.poster-img{
 }
 
 .poster-rating{
-    font-size: .8em;
-    margin: 0em;
+    font-size: .5em;
+    margin: 0em !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .poster-rating > p{
+    margin: 0;
     color: var(--app-color-dark-2);
 }
 .poster-rating > p:last-child{
@@ -64,7 +65,7 @@ img.poster-img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 .poster-play{
     border-radius: 100%;
@@ -76,7 +77,7 @@ img.poster-img{
     border: solid 2px var(--app-color);
 }
 .poster-title{
-    font-size: .7em;
+    font-size: .6em;
     margin: 0em;
     color: white;
     text-overflow: ellipsis;
@@ -292,8 +293,10 @@ img.movieLatest-poster{
         width: 7em !important;
     } */
     .poster-card{
-        height: 65vw !important;
-        width: 30vw !important;
+        height: 55vw !important;
+        width: 25vw !important;
+        /* background-color: blue; */
+        /* margin-left: -.em !important; */
     }
     .movieBackDrop{
         width: 80vw !important;
@@ -370,21 +373,21 @@ img.movieLatest-poster{
         height: 50vw !important;
     }
 
-    .poster-card{
+    /* .poster-card{
         height: 60vw !important;
         width: 26vw !important;
-    }
+    } */
 
     .poster-rating{
-        font-size: .7em;
-        margin: 0em;
+        /* font-size: .7em;
+        margin: 0em; */
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .poster-rating > p > span{
-        width: 1.2em;
-        font-size: .8em;
+        /* width: 1.2em;
+        font-size: .8em; */
     }
     .play-btn-2{
         background-color: var(--app-color);

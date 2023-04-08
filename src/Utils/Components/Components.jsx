@@ -37,7 +37,7 @@ const MoviePosterCard = ({img}) => {
                             <StarIcon style={{
                                 fill: 'var(--app-gold)', 
                                 stroke: 'var(--app-gold)', 
-                                transform: 'scale(0.5)'
+                                transform: 'scale(0.4)'
                             }}/>
                                 <span>6.8</span> 
                         </p>
