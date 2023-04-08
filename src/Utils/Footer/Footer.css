@@ -1,0 +1,7 @@
+.app-footer{
+
+}
+
+.app-footer .nav-link span{
+    color: var(--app-color-dark-3) !important;
+}

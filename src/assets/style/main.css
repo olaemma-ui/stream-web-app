@@ -10,6 +10,7 @@ body{
     /* --app-color-dark: rgba(2, 2, 2, 0.867); */
     --app-color-dark: rgba(21,20,25,255);
     --app-color-dark-2: rgba(79, 79, 79, 0.645);
+    --app-color-dark-3: rgba(137, 137, 137, 0.886);
     --app-color: rgb(116,187,4);
     --app-color-2: rgb(83, 135, 0);
     --app-gold: gold;
@@ -33,7 +34,7 @@ p, h1,h2,h3,h4,h5,h6{
     height: fit-content !important;
 }
 .bg-app-primary{
-    background-color:  #141414 !important;
+    background-color:  #000000 !important;
     /* backdrop-filter: blur(0.625em); */
 }
 .text-app-dark{

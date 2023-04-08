@@ -2,6 +2,21 @@
     width: 0em;
     transform: scale(.9);
 }
+.social-icon{
+    /* padding: 1em; */
+    height: 2.5em;
+    width: 2.5em;
+    display: block;
+    border-radius: 100em;
+    background-color: var(--app-color-dark-2);
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-account{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
 .app-link{
     padding: 1em;
     color: white;

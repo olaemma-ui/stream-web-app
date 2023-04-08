@@ -21,6 +21,12 @@ const NavLink = ({path, text})=>{
     );
 }
 
+const SocialIcon = ({link, icon}) => (
+    <a href={link} className="social-icon">
+        {icon}
+    </a>
+);
+
 const MoviePosterCard = ({img}) => {
     return (
         <>
@@ -215,7 +221,8 @@ const CircleAvatar = ({img, left, zIndex})=>(
 
 export{
     Logo,
-    NavLink,
+    NavLink,    
+    SocialIcon,
     MoviePosterCard,
     Trending,
     SectionNav,
