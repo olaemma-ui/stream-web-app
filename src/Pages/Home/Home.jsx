@@ -18,6 +18,7 @@ const Home = () =>{
         centerMode:false,
         useKeyboardArrows: true,
         showThumbs: false,
+        swipeable: false
     }
 
     const options = {
@@ -255,14 +256,12 @@ const Home = () =>{
                 <Section 
                     title={'Latest'}
                     icon={<ClockIcon className='section-nav-icon m-1 ml-0 mt-0 mb-0' />}/>
-
-                <Carousel {...carouselOptions} centerMode={false}>
-                    <MovieLatest poster={img} banner={img} />
-                    <MovieLatest poster={img1} banner={img1} />
-                    <MovieLatest poster={img2}  banner={img2} />
-                </Carousel>
-                
             </Container>
+            <Carousel {...carouselOptions} centerMode={false}>
+                <MovieLatest poster={img} banner={img} />
+                <MovieLatest poster={img1} banner={img1} />
+                <MovieLatest poster={img2}  banner={img2} />
+            </Carousel>
          
         </div>
     );
