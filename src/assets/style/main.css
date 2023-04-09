@@ -14,6 +14,7 @@ body{
     --app-color: rgb(116,187,4);
     --app-color-2: rgb(83, 135, 0);
     --app-gold: gold;
+    --app-light: rgba(255, 255, 255, 0.667);
 }
 *{
     box-sizing: border-box;
@@ -26,6 +27,9 @@ body{
 p, h1,h2,h3,h4,h5,h6{
     padding: 0em;
     font-family: spaceBold;
+}
+.w-sm{
+    width: fit-content !important;
 }
 .hv-100{
     height: 100vh;
@@ -71,6 +75,13 @@ p, h1,h2,h3,h4,h5,h6{
     border-radius: 0em !important;
     padding: .6em !important;
     box-shadow: .1em 1em 2em -1em var(--app-color);
+}
+.rounded-play{
+    background-color: var(--app-color);
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    padding: .0em .1em .25em .1em;
 }
 .play-btn-2{
     display: flex;

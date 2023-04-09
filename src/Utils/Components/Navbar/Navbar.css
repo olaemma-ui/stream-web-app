@@ -50,18 +50,39 @@ img.logo{
     width: 0;
     min-width: 0em;
     height: 2px;
-    transition: all .1s;
+    transition: all .5s;
     background-color: var(--app-color);
     display: block;
 }
 .nav-link:hover:after{
-    min-width: 7em;
+    min-width: 6em;
     width: 100%;
 }
-.active{
-
+.nav-link.active{
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
 }
-
+.nav .nav-tabs{
+    overflow-x: auto;
+}
+.nav-link.active::after{
+    content: '';
+    width: 100%;
+    min-width: 6em;
+    height: 2px;
+    transition: all .5s;
+    background-color: var(--app-color);
+    display: block;
+}
+button.nav-link{
+    padding: .5em;
+    border: none !important;
+    color: var(--app-color-dark-3);
+}
+button.nav-link:hover{
+    border: none !important;
+}
 .nav-item{
     
 }

@@ -18,7 +18,7 @@ body{
 }
 .banner-color{
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     max-height: max-content;
     background: linear-gradient(250deg, transparent, rgba(0, 0, 0, 0.923), rgba(0, 0, 0, 0.948));
     /* background: rgba(0, 0, 0, 0.33); */

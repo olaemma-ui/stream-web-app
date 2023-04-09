@@ -1,0 +1,34 @@
+.movie-details{
+    margin-top: 13vh;
+}
+.movie-details-parent{
+    min-height: 30em;
+    min-width: 20em;
+    background-size: cover;
+}
+.movie-details-parent-color{
+    min-height: 30em;
+    min-width: 20em;
+    padding: 1em;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.953));
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+.movie-details-parent-color small{
+    font-size: .7em;
+}
+.movie-details-play-btn{
+    position: absolute;
+    left: 45%;
+    bottom: 15em;
+}
+.movie-details-heading h1{
+    font-size: 2.3em;
+    margin: 0 !important;
+}
+.movie-details-heading small{
+    color: var(--app-color-dark-2);
+    font-size: .7em;
+}
