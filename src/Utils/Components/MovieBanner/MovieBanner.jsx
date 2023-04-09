@@ -150,7 +150,7 @@ const MovieBanner = ({className}) => {
                                     <CircleAvatar img={img} zIndex={1} left={45} alt={'avatar'} />
                                 </div>
 
-                                <Link className="btn btn-app-primary play-btn mt-4">
+                                <Link to={'/details'} className="btn btn-app-primary play-btn mt-4">
                                     <PlayIcon fill={'white'} className='mb-1'/> Watch Now
                                 </Link>
                                 
